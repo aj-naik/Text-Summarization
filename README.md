@@ -2,7 +2,7 @@
 Text summarization using Transformers. 
 
 # Project History
-I wanted to create an abstractive text summarization app as a tool to help in university studies. Researched and tried various models for text summarization including LSTMS and RNNs etc. The output was okay enough from a project point of view but not good enough for actual use case. Transformers produce good enough summary for real world use case. According to my tests with both T5 and Pegasus, Pegasus produced slightly better output than T5.
+I wanted to create an abstractive text summarization app as a tool to help in university studies. Researched and tried various models for text summarization including LSTMS and RNNs etc. The output was okay enough from a project point of view but not good enough for actual use case. So I decided to go with Transformers which produce good enough summary for real world use case. According to my tests with both T5 and Pegasus, Pegasus produced slightly better output than T5.
 
 # Project
 1. 'src' directory contains notebooks for t5 and pegasus models.
