@@ -2,11 +2,11 @@
 Text summarization using Transformers. 
 
 # Project History
-I wanted to create an abstractive text summarization app as a tool to help in university studies. Researched and tried various models for text summarization including LSTMS and RNNs etc. The output was okay enough from a project point of view but not good enough for actual use case. So I decided to go with Transformers which produce good enough summary for real world use case. According to my tests with both T5 and Pegasus, Pegasus produced slightly better output than T5.
+I wanted to create an abstractive text summarization app as a tool to help in university studies. Researched and tried various models for text summarization including LSTMS and RNNs etc. The output was okay enough from a project point of view but not good enough for actual use case. So I decided to go with Transformers which produce good enough summary for real world use case.I used T5, Pegasus and Longformer2RoBerta. According to my tests the models surprisingly, Pegasus produced  better output than the other two. Longformer2RobBerta should have been the best model as it is meant to be used for summarization of long documents but the output produced wasn't upto the mark.
 
 # Project
-1. 'src' directory contains notebooks for t5 and pegasus models.
-2. 'prototype' directory contains a web app prototype created using Streamlit framework for testing purposes. To run it locally:-
+1. 'src' directory contains notebooks for T5, Pegasus and Longformer2RoBerta models.
+2. 'prototype' directory contains a web app prototype created using Streamlit framework (Used T5) for testing purposes. To run it locally:-
     1. Git Clone repo
     2. Go to 'prototype' directory, open command prompt there and run 'streamlit run app.py'
 
