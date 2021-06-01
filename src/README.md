@@ -1,2 +1,2 @@
-# Text-Summarization T5 & Pegasus
-Jupyter Notebooks of T5 and Pegasus Tranformers for Abstractive Text Summarization.  
+# Text-Summarization T5, Pegasus, Longformer2RoBerta
+Jupyter Notebooks containing applications of T5, Pegasus Tranformers and Longformer2RoBerta for Abstractive Text Summarization. 
