@@ -8,12 +8,20 @@ Hence I decided to go with Transformers which produce good enough summary for re
 Also tried a few extractive based transformer models like BERT, GPT2, XLNet. The output was almost indistingushible from a human summary.
 
 # Project
-1. 'src' directory contains 2 sub directories:
+1. 'src' directory contains 3 sub directories:
 - 'abstractive' which contains notebooks for T5, Pegasus, Longformer2RoBerta, BART and LED abstractive summarization models.
 - 'extractive' which contains BERT, GPT2 and XLNet extractive summarization models.
 2. 'prototype' directory contains a web app prototype created using Streamlit framework (Used T5) for testing purposes. To run it locally:-
-    1. Git Clone repo
-    2. Go to 'prototype' directory, open command prompt there and run 'streamlit run app.py'
+    - Git Clone repo
+    - Go to 'prototype' directory, open command prompt there and run 'streamlit run app.py'
+3. 'app' directory contains an API created for both Abstractive and Extractive (Pegasus and XLNet) summaries. To test API locally:
+- Make sure FastAPI is installed 
+- Open terminal in project directory and run <code>uvicorn app.main:app --reload</code>
+- After the application startup is completed, go to <code>localhost:8000/docs</code> to try it out
+
+Note:- 
+- API will soon be deployed to cloud for inference and then integrated into FLASK application as direct usage of transformer leads to timeout.
+- Dont copy paste 2 paras directly while testing. Remove all instances of new line so as to convert text to 1 continuous paragraph. Otherwise it will lead to Error 422. 
 
 # Tech Used 
 These are the libraries and technologies used or will be used in the project.
@@ -21,6 +29,7 @@ These are the libraries and technologies used or will be used in the project.
 2. Transformers Library
 3. Streamlit
 4. Flask (Work in Progress)
+5. FastAPI
 
 # To Do
 1. Create a web app using Flask and host on cloud platforms for easy usage.
