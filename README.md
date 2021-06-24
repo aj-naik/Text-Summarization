@@ -15,7 +15,7 @@ Also tried a few extractive based transformer models like BERT, GPT2, XLNet. The
     - Git Clone repo
     - Go to 'prototype' directory, open command prompt there and run 'streamlit run app.py'
 3. 'app' directory contains an API created for both Abstractive and Extractive (Pegasus and XLNet) summaries. To test API locally:
-- Make sure FastAPI is installed 
+- Run <code>pip install -r requirements.txt</code> to install all dependencies
 - Open terminal in project directory and run <code>uvicorn app.main:app --reload</code>
 - After the application startup is completed, go to <code>localhost:8000/docs</code> to try it out
 
