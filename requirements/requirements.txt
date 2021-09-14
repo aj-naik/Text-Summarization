@@ -1,6 +1,8 @@
 transformers==4.7.0
+torch
 pydantic==1.8.2
 fastapi==0.65.2
 summarizer==0.0.7
 uvicorn
 gunicorn>=20.0.0
+sentencepiece

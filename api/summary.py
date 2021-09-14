@@ -1,6 +1,7 @@
 
-from transformers import pipeline, PegasusForConditionalGeneration, PegasusTokenizer
-from summarizer import TransformerSummarizer
+from transformers import  PegasusForConditionalGeneration, PegasusTokenizer
+from transformers import pipeline
+import re
 
 class Summary:
     def __init__(self):
@@ -21,7 +22,8 @@ class Summary:
 
         text = text.replace('\n','')
         text = text.replace('\t','')
-        summary = TransformerSummarizer(transformer_type="XLNet",transformer_model_key="xlnet-base-cased")
-        text = ''.join(text)
-        ext_result = ''.join(summary(text, min_length=60))
+        summarizer = pipeline("summarization")
+        summarized = summarizer(text, min_length=60)
+        summary = summarized[0]
+        ext_result = re.findall(r'"([^"]*)"', str(summary))
         return ext_result

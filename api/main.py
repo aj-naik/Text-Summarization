@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from app.summary import Summary
+from api.summary import Summary
 import uvicorn
 
 class Message(BaseModel):
