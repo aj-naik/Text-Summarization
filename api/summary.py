@@ -5,8 +5,8 @@ import re
 
 class Summary:
     def __init__(self):
-        self.sum_model = PegasusForConditionalGeneration.from_pretrained('google/pegasus-large')
-        self.sum_tokenizer = PegasusTokenizer.from_pretrained('google/pegasus-large') 
+        self.sum_model = PegasusForConditionalGeneration.from_pretrained('google/pegasus-xsum') #use pegasus-large for actual pc and xsum for cloud
+        self.sum_tokenizer = PegasusTokenizer.from_pretrained('google/pegasus-xsum') 
          
     def abs_summary(self, text):
         
