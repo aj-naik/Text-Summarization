@@ -32,5 +32,5 @@ These are the libraries and technologies used or will be used in the project.
 5. FastAPI
 
 # To Do
-1. Create a web app using Flask and host on cloud platforms for easy usage.
-2. Build a chrome extension for use in web site (More portable and faster than web app).
+1. ~~Create a web app using Flask and host on cloud platforms for easy usage.~~ (Done)
+2. Build a chrome extension for use in web site (More portable and faster than web app). (WIP)
