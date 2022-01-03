@@ -1,6 +1,6 @@
 transformers==4.15.0
 torch
-pydantic==1.8.2
+pydantic==1.9.0
 fastapi==0.70.1
 summarizer==0.0.7
 uvicorn
