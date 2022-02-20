@@ -1,5 +1,5 @@
 # Text-Summarization
-Text summarization using Transformers. 
+Abstractive and Extractive Text summarization Transformer model and API. 
 
 # Project History
 I wanted to create an abstractive text summarization app as a tool to help in university studies. Researched and tried various models for text summarization including LSTMS and RNNs etc. The output was okay enough from a project point of view but not good enough for actual use case.
