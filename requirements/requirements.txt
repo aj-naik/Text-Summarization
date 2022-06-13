@@ -1,4 +1,4 @@
-transformers==4.19.3
+transformers==4.19.4
 torch
 pydantic==1.9.1
 fastapi==0.78.0
