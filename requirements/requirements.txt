@@ -2,7 +2,7 @@ transformers==4.22.0
 torch
 
 pydantic==1.10.2
-fastapi==0.84.0
+fastapi==0.85.0
 summarizer==0.0.7
 uvicorn
 gunicorn>=20.0.0
