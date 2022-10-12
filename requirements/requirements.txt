@@ -1,4 +1,4 @@
-transformers==4.23.0
+transformers==4.23.1
 torch
 
 pydantic==1.10.2
